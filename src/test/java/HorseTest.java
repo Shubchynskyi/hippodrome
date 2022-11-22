@@ -117,8 +117,10 @@ class HorseTest {
             double horseSpeed = 10.0;
             double horseDistance = 100.0;
             double expected = horseDistance + horseSpeed * result;
+
             Horse horse = new Horse("name", 10.0, 100.0);
             horse.move();
+
             assertEquals(expected, horse.getDistance());
         }
     }
